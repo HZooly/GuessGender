@@ -18,6 +18,7 @@ function homeController($scope, $route, $http, peopleFactory) {
 	////////////////
 	me.currentPeople;
 	me.score;
+	me.try;
 
 	function getPeople() {
 		peopleFactory.init().$promise.then(function(response) {
@@ -28,6 +29,7 @@ function homeController($scope, $route, $http, peopleFactory) {
 	}
 
 	function checkGender(gender) {
+		me.try++;
 		if (gender == me.currentPeople.gender) {
 			me.result = true;
 			localStorage.setItem('ggScore', parseInt(localStorage.getItem('ggScore'))+parseInt(1));
@@ -48,6 +50,7 @@ function homeController($scope, $route, $http, peopleFactory) {
 		localStorage.removeItem('ggScore');
 		localStorage.setItem('ggScore', 0);
 		me.score = localStorage.getItem('ggScore');
+		me.try = 0;
 	}
 
 	init();

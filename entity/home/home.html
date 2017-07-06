@@ -27,11 +27,12 @@
 			</div>
 		</div>
 		<div id="resultMessage" class="notification is-primary" ng-if="home.result != null">
-			<button class="delete" ng-click="home.result = null"></button>
 			<p ng-if="home.result">Right !</p>
 			<p ng-if="!home.result">Wrong...</p>
 		</div>
 	</div>
 
-	<div>Score : {{home.score}}</div>
+	<div class="has-text-centered">
+		Score : {{home.score}}/{{home.try}}
+	</div>
 </div>
