@@ -3,5 +3,5 @@ angular.module('gg').factory('uinameResource', uinameResource);
 uinameResource.$inject = ['$resource'];
 
 function uinameResource($resource) {
-	return $resource('https://uinames.com/api/');
+	return $resource('../app/proxy/proxy.php?url=https://uinames.com/api/');
 }
