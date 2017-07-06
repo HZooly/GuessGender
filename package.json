@@ -1,0 +1,19 @@
+{
+  "name": "guess_gender",
+  "version": "1.0.0",
+  "description": "Mini project using UINames API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torzuoliH/guess_gender.git"
+  },
+  "author": "Hugo Torzuoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torzuoliH/guess_gender/issues"
+  },
+  "homepage": "https://github.com/torzuoliH/guess_gender#readme"
+}
