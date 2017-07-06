@@ -18,7 +18,7 @@ Access to the app on `guess_gender/public`
 
 **OR**
 
-Test it on my [personnal site](http://hugotorzuoli.com/projects/guess_gender/public/#/) (see Issues part before reporting)
+Test it on my [personal site](http://hugotorzuoli.com/projects/guess_gender/public/#/) (see Issues part before reporting)
 
 ## Issues
 
