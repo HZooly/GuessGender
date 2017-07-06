@@ -1,8 +1,8 @@
 angular.module('gg').controller('homeController', homeController);
 
-homeController.$inject = ['$scope', '$route', 'peopleFactory'];
+homeController.$inject = ['$scope', '$route', '$http', 'peopleFactory'];
 
-function homeController($scope, $route, peopleFactory){
+function homeController($scope, $route, $http, peopleFactory){
 	var me = this;
 
 	////////////////
@@ -19,6 +19,7 @@ function homeController($scope, $route, peopleFactory){
 	function getPeople(){
 		peopleFactory.init().$promise.then(function(response){
 			me.currentPeople = response;
+			getRandomAvatar();
 		}).catch(function(error){
 			alert('Error');
 		});
