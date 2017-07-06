@@ -19,7 +19,6 @@ function homeController($scope, $route, $http, peopleFactory){
 	function getPeople(){
 		peopleFactory.init().$promise.then(function(response){
 			me.currentPeople = response;
-			getRandomAvatar();
 		}).catch(function(error){
 			alert('Error');
 		});
