@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('gg', ['ngRoute']);
+var app = angular.module('gg', ['ngRoute', 'ngResource']);
 
 app.config(config);
 config.$inject = ['$routeProvider', '$locationProvider'];
