@@ -1,1 +1,24 @@
-<div ng-controller="homeController as home"><button ng-click="home.getPeople()">LOG</button></div>
+<div id="home"  ng-controller="homeController as home">
+	<div class="column is-offset-one-quarter is-half">
+		<div class="card">
+			<div class="card-content">
+				<div class="media">
+					<div class="media-left">
+						<figure class="image is-48x48">
+							<img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+						</figure>
+					</div>
+					<div class="media-content">
+						<p class="title is-4">{{home.currentPeople.name}}</p>
+						<p class="subtitle is-6">{{home.currentPeople.region}}</p>
+					</div>
+				</div>
+
+				<div class="content">
+					<a class="button is-primary">Female</a>
+					<a class="button is-danger">Male</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
