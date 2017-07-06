@@ -14,14 +14,24 @@
 					</div>
 				</div>
 
-				<div class="content has-text-centered">
-					<a class="button is-danger">Female</a>
-					<a class="button is-primary">Male</a>
+				<div class="content has-text-centered" ng-if="home.result == null">
+					<a class="button is-danger" ng-click="home.checkGender('female')">Female</a>
+					<a class="button is-primary" ng-click="home.checkGender('male')">Male</a>
+				</div>
+				<div class="content has-text-centered" ng-if="home.result != null">
+					<a class="button is-primary" ng-click="home.next()">Next</a>
 				</div>
 			</div>
 			<div class="card-content" ng-if="home.currentPeople == null">
 				Loading...
 			</div>
 		</div>
+		<div id="resultMessage" class="notification is-primary" ng-if="home.result != null">
+			<button class="delete" ng-click="home.result = null"></button>
+			<p ng-if="home.result">Right !</p>
+			<p ng-if="!home.result">Wrong...</p>
+		</div>
 	</div>
+
+	<div>Score : {{home.score}}</div>
 </div>
