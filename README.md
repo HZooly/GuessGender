@@ -1,7 +1,7 @@
 # guess_gender
 Mini project using UINames API
 
-![test](https://gfycat.com/ifr/HospitableThirstyBalloonfish.gif)
+![demo](https://thumbs.gfycat.com/HospitableThirstyBalloonfish-size_restricted.gif)
 
 ## Requirements
 - [NodeJS](https://nodejs.org/en/)
