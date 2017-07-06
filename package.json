@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/torzuoliH/guess_gender/issues"
   },
-  "homepage": "https://github.com/torzuoliH/guess_gender#readme"
+  "homepage": "https://github.com/torzuoliH/guess_gender#readme",
+  "dependencies": {
+    "angular": "^1.6.5"
+  }
 }

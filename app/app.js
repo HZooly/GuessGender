@@ -5,7 +5,7 @@ var app = angular.module('gg', ['ngRoute', 'ngResource']);
 app.config(config);
 config.$inject = ['$routeProvider', '$locationProvider'];
 
-function config($routeProvider, $locationProvider){
+function config($routeProvider, $locationProvider, $httpProvider){
 	$locationProvider.hashPrefix('');
 
 	$routeProvider.
