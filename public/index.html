@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Guess Gender</title>
 
-		<!-- CSS Framework Bulma -->
-		<link rel="stylesheet" href="../node_modules/bulma/css/bulma.css"/>
+<head>
+	<meta charset="utf-8">
+	<title>Guess Gender</title>
 
-		<!-- Javascript Frameworks & Libraries -->
-		<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
-		<script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
+	<!-- CSS Framework Bulma -->
+	<link rel="stylesheet" href="../node_modules/bulma/css/bulma.css" />
 
-		<!-- App -->
-		<script type="text/javascript" src="../app/app.js"></script>
+	<!-- Javascript Frameworks & Libraries -->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
 
-	</head>
+	<!-- App -->
+	<script type="text/javascript" src="../app/app.js"></script>
 
-	<body ng-app="gg">
-		<div ng-view></div>
-	</body>
+</head>
+
+<body ng-app="gg">
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">Guess Gender</h1>
+				<h2 class="subtitle">Try to find gender of these people</h2>
+			</div>
+		</div>
+	</section>
+	<div class="container" ng-view></div>
+</body>
+
 </html>
