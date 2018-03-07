@@ -16,10 +16,6 @@ Mini project using UINames API
 
 Access to the app on `guess_gender/public`
 
-**OR**
-
-Test it on my [personal site](http://hugotorzuoli.com/projects/guess_gender/public/#/) (see Issues part before reporting)
-
 ## Issues
 
 Actually you need to use a CORS Enabler, like [this one](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) working on Chrome in order to make working requests on UINames API.
